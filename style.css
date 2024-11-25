@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Aladin&family=Allerta+Stencil&display=swap');
+/* Fonts */
+.akronim-regular {
+    font-family: "Akronim", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.aladin-regular {
+    font-family: "Aladin", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.allerta-stencil-regular {
+    font-family: "Allerta Stencil", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Page Styling */
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #030637;
+}
+header{
+    padding: 13px;
+}
+.primary-header nav{
+    display: flex;
+    column-gap:50px;
+    justify-content: center;
+    align-items: center;
+    color: #7ED4AD;
+    font-size: 1.7rem;
+    flex-wrap: wrap;
+}
+nav>a{
+    margin-left: 200px;
+    text-decoration: none;
+    color:inherit ;
+    transition: 0.7s, text-decoration-color 0.3s;
+}
+nav>a:hover{
+    color: #FF2929;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown a{
+    color: blue;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+}
+.dropdown-content li {
+    color: #030637;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: #f1f1f1;
+    width: 170px;
+    font-size: smaller;
+}  
+.dropdown-content li:hover {
+    background-color: #878686d3;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.secondary-header{
+    min-height: 30px;
+    margin-bottom:10px;
+}
+.selected-categories{
+    display: flex;
+    gap: 6px;
+    list-style: none;
+    column-gap: .7em;
+}
+.selected-categories li{
+    outline: 2px solid white;
+    max-width:fit-content;
+    padding: .4em .8em;
+    min-height: 2em;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    flex-wrap: wrap;
+    background-color: #f1f1f1;
+    column-gap: 2px;
+}
+.selected-categories img:hover{
+    background-color: rgba(0, 0, 0, 0.297);
+    border-radius: 50%;
+}
+
+.container{
+    margin:  0 auto 20px ;
+    width: 50%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    background-color:#187795;
+    box-shadow: 2px 2px 6px blue, -2px -2px 6px #FBF4DB;
+}
+.card{
+    color: #FBF4DB;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+.card h2{
+    text-transform: uppercase;
+}
+.container button{
+    margin: 30px 0;
+    width: 60%;
+    min-height: 50px;
+    border-radius: 50px;
+    border: none;
+    background: #0061ff;
+    transition: 0.6s background;
+    font-size: larger;
+    color: #030637;
+    font-weight: 600;
+}
+.container button:hover {
+    background:#60efff;
+}
