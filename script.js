@@ -1,5 +1,5 @@
 function getQuotesApi(selected){
-    const quotesApi ='iaw24s9GiNZPRCHG0/YA3w==Q4hKLuzl8mgbZqX5';
+    
     const url = `https://api.api-ninjas.com/v1/quotes?category=${selected}`
     return fetch(url, {
         method: "GET",
